@@ -1,0 +1,11 @@
+{
+    "name": "my-project/century",
+    "description": "site test",
+    "type": "project",
+    "require": {
+        "vendor/package-name": "^1.0",
+        "anothervendor/another-package": "^2.0"
+    },
+    "license": "MIT",
+    "minimum-stability": "stable"
+}
