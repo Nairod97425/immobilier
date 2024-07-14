@@ -1,0 +1,49 @@
+.div_navbarr{
+    background:goldenrod;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 90%;
+}
+    
+    
+.logo_immo{
+    width:10%;
+}
+
+
+button{
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 18vh;
+    font-size: 2vh;
+    margin-top: 9vh;
+}
+
+button:hover{
+    transform: scale(1.5);
+    transition: transform 0.5s ease-in-out;
+}
+
+.icone_acceuil{
+    width: 5vh;
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 2vh;
+}
+
+ #modif_icone_acceuil{
+    margin-left: 19vh;
+}
+
+#icone_contact{
+    margin-left: 20vh;
+}
+
+    
+
+
+
