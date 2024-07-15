@@ -21,6 +21,7 @@ button{
     margin-left: 18vh;
     font-size: 2vh;
     margin-top: 9vh;
+    list-style-type:none;
 }
 
 button:hover{

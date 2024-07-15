@@ -20,7 +20,7 @@ const Navbarr = () => {
             <div class="navbar">
               
              <img src={Iconeacceuil} alt="icone acceuil" className='icone_acceuil' id='modif_icone_acceuil'/>
-              <button>Accueil</button>
+              <a href=''><button>Accueil</button></a>
              
 
               <img src={Iconebienimmo} alt="icone clef" className='icone_acceuil'/> 

@@ -1,0 +1,42 @@
+.titre_resaux{
+    font-size: 3vh;
+}
+
+
+.resaux_sociaux{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+}
+
+.icone_footer{
+    width: 7vh;
+    height: 7vh;
+    margin-left: 2vh;
+}
+
+.logo_footer{
+width: 20vh;
+margin-left: 12vh;
+margin-top: 1vh;
+margin-bottom: 2vh;
+height: 20vh;
+}
+
+.div_condition{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.copyright{
+    text-align: center;
+}
+
+.map_logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+

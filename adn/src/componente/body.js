@@ -35,7 +35,7 @@ const Body = () => {
 
       {/*_______________________________ aventages & services_________________________________ */}
 
-<h2 className='titre_nos_servies'>NOS SERVICES</h2>
+
 <div className='div_anvantages_services'>
 
   

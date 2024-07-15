@@ -58,12 +58,13 @@ p.titre {
     padding-top: 13vh;
     border-radius: 20vh;
     margin-left: 10vh;
+    padding: 4vh;
   }
 
   h1.titre_expertise {
     position: absolute;
-    bottom: -103vh;
-    left: 23vh;
+    bottom: -92vh;
+    left: 27vh;
     font-size: 5vh;
 }
 
@@ -71,8 +72,8 @@ p.titre {
     position: absolute;
     width: 46vh;
     text-align: center;
-    bottom: -147vh;
-    left: 12vh;
+    bottom: -141vh;
+    left: 16vh;
     font-size: 100%;
     color: rgb(255, 255, 255);
     -webkit-text-stroke: 0.5px black;
@@ -92,13 +93,14 @@ position: relative;
     width: 25%;
     padding-top: 13vh;
     border-radius: 20vh;
-    margin-left: 10vh;
+    margin-left: 3vh;
+    padding: 4vh;
 }
 
 .titre_recherche_perso{
     position: absolute;
-    bottom: -106vh;
-    left: 80vh;
+    bottom: -97vh;
+    left: 83vh;
     font-size: 5vh;
     text-align: center;
 }
@@ -109,8 +111,8 @@ position: relative;
     position: absolute;
     width: 45vh;
     text-align: center;
-    bottom: -158vh;
-    left: 36%;
+    bottom: -151vh;
+    left: 38%;
     font-size: 100%;
     color: rgb(255, 255, 255);
     -webkit-text-stroke: 0.5px black;
@@ -125,30 +127,32 @@ position: relative;
 
 
 
-/* conseils et acompagnement */
+/*__________________________ conseils et acompagnement_________________________________ */
 
 .img_conseil{
     position: relative;
     width: 25%;
     padding-top: 13vh;
     border-radius: 20vh;
-    margin-left: 10vh;
+    margin-left: 3vh;
+    padding: 4vh;
 }
 
 .titre_conseils{
     position: absolute;
-    bottom: -106vh;
-    left: 139vh;
+    bottom: -94vh;
+    left: 144vh;
     font-size: 5vh;
     text-align: center;
 }
+
 
 .texte_conseils{
     position: absolute;
     width: 45vh;
     text-align: center;
-    bottom: -154vh;
-    left: 137vh;
+    bottom: -147vh;
+    left: 143vh;
     font-size: 100%;
     color: rgb(255, 255, 255);
     -webkit-text-stroke: 0.5px black;
@@ -161,13 +165,7 @@ position: relative;
 }
 
 
-.titre_nos_servies{
-   margin: 0;
-position: absolute;
-font-size: 8vh;
-left: 72vh;
-    
-}
+
 
 
   
