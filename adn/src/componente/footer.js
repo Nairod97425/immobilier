@@ -70,6 +70,15 @@ function Footer() {
         <img src={Iconeinsta} alt="drfhbdgfc" className='icone_footer'/>
         <img src={Iconetwitter} alt="fbx xfc c" className='icone_footer'/>
         <img src={Iconefb} alt="xfbvbbnbncc" className='icone_footer'/>
+        
+        <p className='info_agence'> 
+          123 Avenue des Lumières <br/>
+            75015 Paris<br/>
+            0131465219<br/>
+            ADNimmo@gmail.com<br/>
+            ouvert du : lundi au samedi 9h a 19h30<br/> 
+            </p>
+
         <p className='condition'> 
             À propos de nous<br/>
             Nos services<br/>
