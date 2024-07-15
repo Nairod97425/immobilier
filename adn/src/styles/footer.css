@@ -39,4 +39,16 @@ height: 20vh;
     justify-content: space-between;
 }
 
+.map-container{
+    width: 22%;
+    height: 241px;
+    position: absolute;
+    bottom: -193vh;
+    left: 161vh;
+}
+
+.condition{
+    
+}
+
 

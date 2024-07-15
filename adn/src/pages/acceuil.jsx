@@ -15,4 +15,4 @@ function Acceuil() {
     )
 }
 
-export default Acceuil
+export default Acceuil;
