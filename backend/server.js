@@ -23,15 +23,12 @@ app.post('/api/signup', async (req, res) => {
   const { username, email, password, age } = req.body;
 
   if (!username || !email || !password || !age) {
-    console.error('Champs manquants', { username, email, password, age });
     return res.status(400).send('Tous les champs sont obligatoires');
   }
 
   try {
-    // Hacher le mot de passe avec bcrypt
-    const hashedPassword = await bcrypt.hash(password, 10); // 10 est le coût du hachage
-
-    // Insérer l'utilisateur dans la base de données avec le mot de passe haché
+    const hashedPassword = await bcrypt.hash(password, 10);
+    
     const result = await pool.query(
       'INSERT INTO utilisateurs (username, email, password, age) VALUES ($1, $2, $3, $4) RETURNING *',
       [username, email, hashedPassword, age]
@@ -39,8 +36,38 @@ app.post('/api/signup', async (req, res) => {
 
     res.status(201).json(result.rows[0]);
   } catch (error) {
-    console.error('Erreur lors de l\'inscription:', error);
+    console.error('Erreur lors de l\'inscription:', error); // Log the error details
     res.status(500).send('Erreur lors de l\'inscription');
+  }
+});
+app.post('/api/login', async (req, res) => {
+  const { email, password } = req.body;
+
+  if (!email || !password) {
+    return res.status(400).send('Email et mot de passe sont requis');
+  }
+
+  try {
+    const result = await pool.query('SELECT * FROM utilisateurs WHERE email = $1', [email]);
+    
+    if (result.rows.length === 0) {
+      console.error('Utilisateur non trouvé pour l\'email:', email);
+      return res.status(401).send('Email ou mot de passe incorrect');
+    }
+
+    const user = result.rows[0];
+    const isMatch = await bcrypt.compare(password, user.password);
+
+    if (!isMatch) {
+      console.error('Mot de passe incorrect pour l\'email:', email);
+      return res.status(401).send('Email ou mot de passe incorrect');
+    }
+
+    const { password: pwd, ...userData } = user;
+    res.status(200).json(userData);
+  } catch (error) {
+    console.error('Erreur lors de la connexion:', error);
+    res.status(500).send('Erreur lors de la connexion');
   }
 });
 
