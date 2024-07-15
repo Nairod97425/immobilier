@@ -1,0 +1,63 @@
+.titre_resaux{
+    font-size: 3vh;
+}
+
+
+.resaux_sociaux{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+padding-left: 2vh;
+}
+
+.icone_footer{
+    width: 7vh;
+    height: 7vh;
+    margin-left: 2vh;
+}
+
+.logo_footer{
+width: 20vh;
+margin-left: 12vh;
+margin-top: 1vh;
+margin-bottom: 2vh;
+height: 20vh;
+}
+
+.div_condition{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.copyright{
+    text-align: center;
+}
+
+.map_logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.map-container{
+    width: 22%;
+    height: 241px;
+    position: absolute;
+    bottom: -193vh;
+    left: 161vh;
+}
+
+.condition{
+    line-height: 5vh;
+    position: absolute;
+    left: 153vh;
+    bottom: -193vh;
+}
+
+.info_agence{
+ line-height: 5vh;
+    position: absolute;
+    left: 70vh;
+    bottom: -192vh;
+}

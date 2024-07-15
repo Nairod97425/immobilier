@@ -1,0 +1,165 @@
+.div_img_acceuil{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img_acceuil{
+ width: 104vh;
+height: 80vh;
+
+}
+
+.img_acceuil_2{
+    width: 104vh;
+    height: 80vh;
+}
+
+.img_acceuil_3{
+    width: 50%;
+}
+
+.img_acceuil_4{
+    width: 50%;
+}
+
+.logo_immo_header{
+    position: absolute;
+    left: 75vh;
+    top: 74vh;
+    width: 58vh;
+}
+
+p.titre {
+    font-size: 6vh;
+    text-align: center;
+    color: rgb(235, 172, 0);
+    margin: 0;
+    position: absolute;
+    top: 65vh;
+    margin-left: 32vh;
+    -webkit-text-stroke: 1.5px black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+/*_____________________________ expertise & services personalisé_____________________________________ */
+.div_anvantages_services{
+    display: flex;
+    flex-wrap: wrap;
+     background-color:goldenrod;
+}
+
+
+
+  .img_expertise {
+    position: relative;
+    width: 25%;
+    padding-top: 13vh;
+    border-radius: 20vh;
+    margin-left: 10vh;
+    padding: 4vh;
+  }
+
+  h1.titre_expertise {
+    position: absolute;
+    bottom: -92vh;
+    left: 27vh;
+    font-size: 5vh;
+}
+
+.texte_expertise{
+    position: absolute;
+    width: 46vh;
+    text-align: center;
+    bottom: -141vh;
+    left: 16vh;
+    font-size: 100%;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 0.5px black;
+    font-weight: bold;
+    font-weight: bold;
+    background-color: #00000094;
+    border-radius: 29px;
+    height: 39vh;
+    padding: 7px;
+}
+
+/*_______________________ recherche personalisé___________________________ */
+
+
+.img_recherche_pers{
+position: relative;
+    width: 25%;
+    padding-top: 13vh;
+    border-radius: 20vh;
+    margin-left: 3vh;
+    padding: 4vh;
+}
+
+.titre_recherche_perso{
+    position: absolute;
+    bottom: -97vh;
+    left: 83vh;
+    font-size: 5vh;
+    text-align: center;
+}
+
+
+
+.texte_recherche_perso{
+    position: absolute;
+    width: 45vh;
+    text-align: center;
+    bottom: -151vh;
+    left: 38%;
+    font-size: 100%;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 0.5px black;
+    font-weight: bold;
+    font-weight: bold;
+    background-color: #00000094;
+    border-radius: 29px;
+    height: 50vh;
+    padding: 7px;
+}
+
+
+
+
+/*__________________________ conseils et acompagnement_________________________________ */
+
+.img_conseil{
+    position: relative;
+    width: 25%;
+    padding-top: 13vh;
+    border-radius: 20vh;
+    margin-left: 3vh;
+    padding: 4vh;
+}
+
+.titre_conseils{
+    position: absolute;
+    bottom: -94vh;
+    left: 144vh;
+    font-size: 5vh;
+    text-align: center;
+}
+
+
+.texte_conseils{
+    position: absolute;
+    width: 45vh;
+    text-align: center;
+    bottom: -147vh;
+    left: 143vh;
+    font-size: 100%;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 0.5px black;
+    font-weight: bold;
+    font-weight: bold;
+    background-color: #00000094;
+    border-radius: 29px;
+    height: 46vh;
+    padding: 7px;
+}
