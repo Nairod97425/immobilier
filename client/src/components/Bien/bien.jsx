@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Acheterbien from "./Acheter/acheter";
 import Vendrebien from "./Vendre/vendre";
+import Avis from "./review";
 
 // STYLED-COMPONENTS
 const Bodybien = styled.div`
   background: #f9f3f3;
   margin: 0;
-`;
+`
 
 const Button = styled.button`
   padding: 15px 32px;
@@ -15,10 +16,11 @@ const Button = styled.button`
   text-decoration: none;
   display: inline-block;
   font-size: 20px;
-  margin: 10px 2px;
+  margin: 10px 5px;
   cursor: pointer;
   border: none;
-`;
+  background: white;
+`
 
 export default function Biens() {
   const [activeComponent, setActiveComponent] = useState("acheter");
@@ -34,6 +36,7 @@ export default function Biens() {
         <Button onClick={() => handleClick("vendre")}>Vendre</Button>
       </div>
       {activeComponent === "acheter" ? <Acheterbien /> : <Vendrebien />}
+      <Avis />
     </Bodybien>
   );
 }

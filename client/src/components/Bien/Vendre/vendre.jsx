@@ -15,31 +15,52 @@ const FormContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20%;
+  width: 60%;
+  background: white;
+  border-radius: 5px;
 `
 
 const Form = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: 55%;
 `
 
+const Label = styled.label`
+  font-weight: bold;
+  font-size: 18px;
+`
 const Input = styled.input`
   margin: 0.5rem;
   padding: 0.5rem;
   font-size: 1rem;
+  border: none;
+  border-radius: 2px;
+  background: #f9f3f3;
+`
+const Select = styled.select`
+  width: 55%;
+  height: 30px;
+  border: none;
+  border-radius: 2px;
 `
 
 const TextArea = styled.textarea`
   margin: 0.5rem;
   padding: 0.5rem;
   font-size: 1rem;
+  height: 150px;
+  width: 70%;
+  border: none;
+  background: #f9f3f3;;
 `
 
 const Button = styled.button`
-  background-color: #4CAF50;
-  color: white;
+  background-color: #f9f3f3;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -78,24 +99,24 @@ export default function Vendrebien() {
       <FormContainer>
         <h2>Je contacte mon agence ADN immo</h2>
         <Form onSubmit={handleSubmit}>
-          <label htmlFor="name">Nom</label>
+          <Label htmlFor="name">Nom</Label>
           <Input type="text" id="name" value={name} onChange={(e) => setName(e.target.value)} />
-          <label htmlFor="email">E-mail</label>
+          <Label htmlFor="email">E-mail</Label>
           <Input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-          <label htmlFor="phone">Téléphone</label>
+          <Label htmlFor="phone">Téléphone</Label>
           <Input type="tel" id="phone" value={phone} onChange={(e) => setPhone(e.target.value)} />
-          <label htmlFor="propertyType">Type de bien</label>
-          <select id="propertyType" value={propertyType} onChange={(e) => setPropertyType(e.target.value)}>
+          <Label htmlFor="propertyType">Type de bien</Label>
+          <Select id="propertyType" value={propertyType} onChange={(e) => setPropertyType(e.target.value)}>
             <option value="">-- Choisir un type --</option>
             <option value="appartement">Appartement</option>
             <option value="maison">Maison</option>
             <option value="parking">Parking</option>
             <option value="terrain">Terrain</option>
             <option value="immeuble">Immeuble</option>
-          </select>
-          <label htmlFor="adrasseBien">Adresse du bien à estimer</label>
+          </Select>
+          <Label htmlFor="adrasseBien">Adresse du bien à estimer</Label>
           <Input type="text" id="adresseBien" value={adresseBien} onChange={(e) => setAdressebien(e.target.value)} />
-          <label htmlFor="message">Message</label>
+          <Label htmlFor="message">Message</Label>
           <TextArea id="message" value={message} onChange={(e) => setMessage(e.target.value)} />
           <Button type="submit">Envoyer</Button>
         </Form>
