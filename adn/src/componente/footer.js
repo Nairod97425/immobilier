@@ -89,14 +89,12 @@ function Footer() {
         </p>
       </div>
 
-     <div id="map" className="map-container"></div>
-
       <hr/>
 
       <div className='div_condition'>
-        <p>Mentions légales & CGU</p>
-        <p>Données personnelles</p>
-        <p>Gestionnaire des cookies</p>
+        <p className='text_condition'>Mentions légales & CGU</p>
+        <p className='text_condition'>Données personnelles</p>
+        <p className='text_condition'>Gestionnaire des cookies</p>
       </div>
 
       <p className='copyright'>Copyright © 2024 ADN immo Tous droits réservés.</p>

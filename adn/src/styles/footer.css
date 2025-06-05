@@ -61,6 +61,51 @@ height: 20vh;
     left: 70vh;
     bottom: -192vh;
 }
+
+@media screen and (max-width: 426px) {
+    .logo_footer {
+        width: 12vh;
+        margin-left: 7vh;
+        margin-top: 1vh;
+        margin-bottom: 2vh;
+        height: 12vh;
+    }
+
+    .titre_resaux {
+        font-size: 2vh;
+    }
+
+    .icone_footer {
+        width: 3vh;
+        height: 3vh;
+        margin-left: 2vh;
+    }
+
+    p.text_condition {
+        font-size: 52%;
+    }
+
+    .copyright {
+        text-align: center;
+        font-size: 40%;
+    }
+
+    .info_agence {
+        line-height: 2vh;
+        position: absolute;
+        left: 27vh;
+        bottom: -220vh;
+        font-size: 20%;
+    }
+
+    .condition {
+        line-height: 3vh;
+        position: absolute;
+        left: 53vh;
+        bottom: -228vh;
+        font-size: 20%;
+    }
+}
    
 
 
